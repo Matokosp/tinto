@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'WhiteAngelica';
+  src:  url('../fonts/whiteangelica.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Libre Baskerville', serif;
+}
+
+h1,h2 {
+  font-family: 'WhiteAngelica', serif;
+}
+
+/* HEADER */
+
+.front_hero {
+  height: 100vh;
+  background: transparent;
+  position: relative;
+}
+
+.logo_header {
+  position: absolute;
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+  top: 50%;
+  margin-top: -50px;
+}
+
+.logo_header img {
+  width: 100%;
+}
+
+/* FOREGROUND */
+
+.section-foreground {
+  margin: 0;
+  background-color: #000;
+  padding: 12vh 0;
+  text-align: center;
+}
+
+.section-foreground-text {
+  color: #fff;
+  margin: 0;
+  font-size: 1.2rem;
+  transform: translateY(0.5rem);
+}
+
+.section-foreground-title {
+  color: #fff;
+  margin: 0;
+  font-size: 2.8rem;
+  /* transform: translateY(-0.8rem); */
+}
+
+.section-foreground-line {
+  display: inline-block;
+  height: 2px;
+  width: 30px;
+  background-color: #fff;
+  transform: translateY(-0.5rem);
+}
+
+/* PARALLAX SECTION */
+
+.parallax_section {
+  height: 100vh;
+}
