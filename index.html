@@ -9,6 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <!-- MY STYLE -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- MENU -->
+    <link rel="stylesheet" href="assets/css/menu.css">
   </head>
   <body>
   <header class="front_hero" data-parallax='scroll' data-image-src='assets/images/bkg-1.jpg'>
@@ -16,7 +19,21 @@
       <img src="assets/images/tinto-logo-white.png" alt="">
     </div>
   </header>
-  <section class="section-foreground">
+  <nav id="navbar" class="navbar">
+    <section class="menu-responsive">
+      <div class="hamburger">
+        <div class="menu-icon"></div>
+        <div class="menu-icon"></div>
+        <div class="menu-icon"></div>
+      </div>
+      <ul class="menu-res">
+        <li><a href="#">Quiénes Somos</a></li>
+        <li><a href="#">Galería</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </section>
+  </nav>
+  <section class="section-foreground one">
     <p class="section-foreground-text">Somos una banquetera</p>
     <h2 class="section-foreground-title">innovadora</h2>
     <div class="section-foreground-line"></div>
@@ -33,6 +50,12 @@
     <h2 class="section-foreground-title">profesional</h2>
     <div class="section-foreground-line"></div>
   </section>
+  <div class="parallax_section"  data-parallax='scroll' data-image-src='assets/images/bkg-4.jpg'></div>
+  <section class="section-foreground">
+    <p class="section-foreground-text gallery-title">Galería</p>
+    <br>
+    <div class="section-foreground-line"></div>
+  </section>
 
 
     <!-- <script
@@ -43,5 +66,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="assets/js/parallax.js"></script>
     <script src="assets/js/myscript.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+    </script>
   </body>
 </html>
