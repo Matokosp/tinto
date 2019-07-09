@@ -4,7 +4,7 @@
   overflow: hidden;
   /* background-color: #000; */
   height: 50px;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .navbar a.active {
@@ -21,7 +21,7 @@
 }
 
 .sticky + .one {
-  /* margin-top: 50px; */
+  margin-top: 50px;
 }
 
 /* RESPONSIVE NAV */

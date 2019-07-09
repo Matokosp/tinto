@@ -3,6 +3,9 @@ $(window).scroll(function(){
   //250 is fade pixels
   });
 
+  const sm = window.matchMedia( "(max-width: 999px)" );
+  const md = window.matchMedia( "(min-width: 1000px)" );
+
 
 // LOGO HEADER FADE
 

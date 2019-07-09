@@ -13,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Libre Baskerville', serif;
+  background-color: #000;
 }
 
 h1,h2 {
@@ -25,6 +26,7 @@ h1,h2 {
   height: 100vh;
   background: transparent;
   position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .logo_header {
@@ -79,6 +81,42 @@ h1,h2 {
 
 /* GALLERY SECTION */
 
-.gallery-title {
+.non-parallax-title {
   font-size: 2rem;
+}
+
+.gallery_section {
+  max-width: 2000px;
+}
+
+.gallery_flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.gallery-big img {
+  margin: 2px;
+}
+
+.gallery-medium img {
+  display: none;
+  width: 50%;
+  margin: 2px;
+}
+
+.gallery-small img {
+  display: none;
+  width: 33.3%;
+  margin: 2px;
+}
+
+/* CONTACT */
+
+.contact_section {
+  background-image: url('../images/contact-bkg-res.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
 }

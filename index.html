@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/menu.css">
   </head>
   <body>
-  <header class="front_hero" data-parallax='scroll' data-image-src='assets/images/bkg-1.jpg'>
+  <header class="front_hero" >
     <div class="logo_header">
       <img src="assets/images/tinto-logo-white.png" alt="">
     </div>
@@ -38,23 +38,71 @@
     <h2 class="section-foreground-title">innovadora</h2>
     <div class="section-foreground-line"></div>
   </section>
-  <div class="parallax_section"  data-parallax='scroll' data-image-src='assets/images/bkg-2.jpg'></div>
+  <div class="parallax_section parallax-uno"></div>
   <section class="section-foreground">
     <p class="section-foreground-text">Tenemos experiencia en construir noches</p>
     <h2 class="section-foreground-title">inolvidables</h2>
     <div class="section-foreground-line"></div>
   </section>
-  <div class="parallax_section"  data-parallax='scroll' data-image-src='assets/images/bkg-3.jpg'></div>
+  <div class="parallax_section parallax-dos"></div>
   <section class="section-foreground">
     <p class="section-foreground-text">Contamos con un equipo</p>
     <h2 class="section-foreground-title">profesional</h2>
     <div class="section-foreground-line"></div>
   </section>
-  <div class="parallax_section"  data-parallax='scroll' data-image-src='assets/images/bkg-4.jpg'></div>
+  <div class="parallax_section parallax-tres"></div>
   <section class="section-foreground">
-    <p class="section-foreground-text gallery-title">Galería</p>
+    <p class="section-foreground-text non-parallax-title">Galería</p>
     <br>
     <div class="section-foreground-line"></div>
+  </section>
+  <section class="gallery_section">
+    <div class="gallery_flex gallery-big">
+      <img src="assets/images/gallery-test.jpg" alt="">
+    </div>
+    <div class="gallery_flex gallery-medium">
+      <img src="assets/images/gallery-test.jpg" alt="">
+      <img src="assets/images/gallery-test.jpg" alt="">
+    </div>
+    <div class="gallery_flex gallery-small">
+      <img src="assets/images/gallery-test.jpg" alt="">
+      <img src="assets/images/gallery-test.jpg" alt="">
+      <img src="assets/images/gallery-test.jpg" alt="">
+    </div>
+
+    <div class="gallery_flex gallery-big">
+      <img src="assets/images/gallery-test.jpg" alt="">
+    </div>
+    <div class="gallery_flex gallery-medium">
+      <img src="assets/images/gallery-test.jpg" alt="">
+      <img src="assets/images/gallery-test.jpg" alt="">
+    </div>
+    <div class="gallery_flex gallery-small">
+      <img src="assets/images/gallery-test.jpg" alt="">
+      <img src="assets/images/gallery-test.jpg" alt="">
+      <img src="assets/images/gallery-test.jpg" alt="">
+    </div>
+
+    <div class="gallery_flex gallery-big">
+      <img src="assets/images/gallery-test.jpg" alt="">
+    </div>
+    <div class="gallery_flex gallery-medium">
+      <img src="assets/images/gallery-test.jpg" alt="">
+      <img src="assets/images/gallery-test.jpg" alt="">
+    </div>
+    <div class="gallery_flex gallery-small">
+      <img src="assets/images/gallery-test.jpg" alt="">
+      <img src="assets/images/gallery-test.jpg" alt="">
+      <img src="assets/images/gallery-test.jpg" alt="">
+    </div>
+  </section>
+  <section class="section-foreground">
+    <p class="section-foreground-text non-parallax-title">Contacto</p>
+    <br>
+    <div class="section-foreground-line"></div>
+  </section>
+  <section class="contact_section">
+
   </section>
 
 
@@ -66,6 +114,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="assets/js/parallax.js"></script>
     <script src="assets/js/myscript.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      $( document ).ready(function() {
+
+        if (sm.matches) {
+          $('.front_hero').parallax({imageSrc: 'assets/images/bkg-1-res.jpg'});
+          $('.parallax-uno').parallax({imageSrc: 'assets/images/bkg-2-res.jpg'});
+          $('.parallax-dos').parallax({imageSrc: 'assets/images/bkg-3-res.jpg'});
+          $('.parallax-tres').parallax({imageSrc: 'assets/images/bkg-4-res.jpg'});
+        }
+
+        if (md.matches) {
+          $('.front_hero').parallax({imageSrc: 'assets/images/bkg-1.jpg'});
+          $('.parallax-uno').parallax({imageSrc: 'assets/images/bkg-2.jpg'});
+          $('.parallax-dos').parallax({imageSrc: 'assets/images/bkg-3.jpg'});
+          $('.parallax-tres').parallax({imageSrc: 'assets/images/bkg-4.jpg'});
+        }
+
+      });
+    </script>
     <script type="text/javascript">
       window.onscroll = function() {myFunction()};
 

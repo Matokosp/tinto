@@ -15,4 +15,20 @@
     font-size: 2.8rem;
   }
 
+  /* GALLERY SECTION */
+
+  .gallery-medium img {
+    display: block;
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+  /* GALLERY SECTION */
+
+  .gallery-small img {
+    display: block;
+  }
+
 }
