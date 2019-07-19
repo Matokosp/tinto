@@ -4,12 +4,8 @@
   overflow: hidden;
   /* background-color: #000; */
   height: 50px;
-  /* position: absolute; */
-}
-
-.navbar a.active {
-  background-color: #4CAF50;
-  color: white;
+  position: relative;
+  z-index: 99;
 }
 
 .sticky {
@@ -24,6 +20,12 @@
   margin-top: 50px;
 }
 
+/* DESKTOP NAV */
+
+.menu-desktop {
+  display: none;
+}
+
 /* RESPONSIVE NAV */
 
 .menu-responsive {
@@ -33,16 +35,40 @@
   width: 100%;
 }
 
+.hamburger {
+  position: relative;
+  z-index: 50;
+  transition: 0.8s;
+}
+
 .menu-icon {
   display: block;
-  width: 32px;
+  width: 25px;
   height: 2px;
-  margin-bottom: 7px;
+  margin-bottom: 5px;
   background-color: #fff;
+  transition: 0.4s;
+}
+
+.menuicon_first {
+  transform: rotate(45deg) translateX(2px) translateY(-4px);
+  transform-origin: top left;
+}
+
+.menuicon_second {
+  opacity: 0;
+}
+
+.menuicon_third {
+  transform: rotate(-45deg) translateX(2px) translateY(4px);
+  transform-origin: bottom left;
 }
 
 .menu-res {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -52,17 +78,55 @@
   top: 0;
   left: 0;
   transform: translateX(-100vw);
+  transition: 0.7s;
+}
+
+.show {
+  transform: translateX(0);
 }
 
 .menu-res li {
   display: block;
+  margin: 20px 0;
+  color: #fff;
+}
 
+.menu-res li a {
+  font-size: 1.5rem;
+}
+
+.menu-res-line {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
 }
 
 @media (min-width: 1000px) {
 
-.nav-responsive {
+.navbar {
+  position: absolute;
+  height: auto;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: transparent;
+}
+
+.sticky + .one {
+  margin-top: 0px;
+}
+
+.menu-responsive {
   display: none;
+}
+
+.menu-desktop {
+  display: block;
 }
 
 }

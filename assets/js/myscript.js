@@ -6,76 +6,38 @@ $(window).scroll(function(){
   const sm = window.matchMedia( "(max-width: 999px)" );
   const md = window.matchMedia( "(min-width: 1000px)" );
 
+// MENU
 
-// LOGO HEADER FADE
+var menuShow = $('.menu-res').hasClass('show');
 
-// var $content = $('.front_hero .logo_header')
-//   , $blur    = $('.front_hero .overlay')
-//   , wHeight  = $(window).height();
-//
-// $(window).on('resize', function(){
-//   wHeight = $(window).height();
-// });
-//
-// window.requestAnimFrame = (function()
-// {
-//   return  window.requestAnimationFrame       ||
-//           window.webkitRequestAnimationFrame ||
-//           window.mozRequestAnimationFrame    ||
-//           function( callback ){
-//             window.setTimeout(callback, 1000 / 60);
-//           };
-// })();
-//
-// function Scroller()
-// {
-//   this.latestKnownScrollY = 0;
-//   this.ticking            = false;
-// }
-//
-// Scroller.prototype = {
-//
-//   init: function() {
-//     window.addEventListener('scroll', this.onScroll.bind(this), false);
-//     $blur.css('background-image',$('.front_hero:first-of-type').css('background-image'));
-//   },
-//
-//
-//   onScroll: function() {
-//     this.latestKnownScrollY = window.scrollY;
-//     this.requestTick();
-//   },
-//
-//
-//   requestTick: function() {
-//     if( !this.ticking ) {
-//       window.requestAnimFrame(this.update.bind(this));
-//     }
-//     this.ticking = true;
-//   },
-//
-//   update: function() {
-//     var currentScrollY = this.latestKnownScrollY;
-//     this.ticking       = false;
-//
-//
-//     var slowScroll = currentScrollY / 2
-//       , blurScroll = currentScrollY * 2
-//       , opaScroll = 1.4 - currentScrollY / 400;
-//
-//     $content.css({
-//       'transform'         : 'translateY(' + slowScroll + 'px)',
-//       '-moz-transform'    : 'translateY(' + slowScroll + 'px)',
-//       '-webkit-transform' : 'translateY(' + slowScroll + 'px)',
-//       'opacity' : opaScroll
-//     });
-//
-//     $blur.css({
-//       'opacity' : blurScroll / wHeight
-//     });
-//   }
-// };
-//
-//
-// var scroller = new Scroller();
-// scroller.init();
+function desplazar () {
+  $('.menu-res').toggleClass('show');
+  $('#hamburger').toggleClass('top');
+  $('#menuIconFirst').toggleClass('menuicon_first');
+  $('#menuIconSecond').toggleClass('menuicon_second');
+  $('#menuIconThird').toggleClass('menuicon_third');
+}
+
+$('#hamburger').on('click', function(e) {
+  desplazar();
+  e.stopPropagation();
+  menuShow = $('.menu-res').hasClass('show');
+})
+
+window.addEventListener('click', function(e){
+    if ( menuShow = true ) {
+      $('.menu-res').removeClass('show');
+      $('#hamburger').removeClass('top');
+      $('#menuIconFirst').removeClass('menuicon_first');
+      $('#menuIconSecond').removeClass('menuicon_second');
+      $('#menuIconThird').removeClass('menuicon_third');
+    }
+})
+
+$(".menu-desktop-list li a").click(function() {
+    var liText = $(this).attr('href');
+    console.log(liText);
+    $('html, body').animate({
+        scrollTop: $(liText).offset().top
+    }, 500);
+});
