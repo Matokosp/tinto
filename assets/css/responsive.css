@@ -46,4 +46,11 @@
     display: block;
   }
 
+  /* CONTACT */
+
+  .contact_section {
+    background-image: url('../images/contact-bkg.jpg');
+  }
+
+
 }
