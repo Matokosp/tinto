@@ -28,6 +28,10 @@
 
   /* GALLERY SECTION */
 
+  .gallery-medium {
+    flex-direction: row;
+  }
+
   .gallery-medium img {
     display: block;
   }

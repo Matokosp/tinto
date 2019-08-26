@@ -119,9 +119,13 @@ h1,h2 {
   margin: 2px;
 }
 
+.gallery-medium {
+  flex-direction: column;
+}
+
 .gallery-medium img {
-  display: none;
-  width: 50%;
+  display: block;
+  width: 100%;
   margin: 2px;
 }
 
