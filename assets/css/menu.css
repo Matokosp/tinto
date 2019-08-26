@@ -127,6 +127,28 @@
 
 .menu-desktop {
   display: block;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.menu_logo {
+  width: 160px;
+}
+
+.menu-desktop-list {
+  color: #aaa;
+  list-style-type: none;
+  padding: 0;
+  transition: 0.5s;
+}
+
+.menu-desktop-list li {
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.menu-active {
+  color: #fff;
 }
 
 }

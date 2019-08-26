@@ -34,6 +34,31 @@ window.addEventListener('click', function(e){
     }
 })
 
+// MENU SCROLL DESKTOP
+
+var quienesSomos = $('#quienesSomos').offset();
+var gallery = $('#gallery').offset();
+var contact = $('#contact').offset();
+var desktopNav = $('.menu-desktop-list')
+
+window.addEventListener('scroll', function(){
+  if ($(window).scrollTop() >= quienesSomos.top) {
+  desktopNav.children('li:nth-child(1)').addClass('menu-active');
+  desktopNav.children('li:nth-child(2)').removeClass('menu-active');
+  } else {
+  desktopNav.children('li:nth-child(1)').removeClass('menu-active');
+  }
+  if ($(window).scrollTop() + 50 >= gallery.top) {
+  desktopNav.children('li:nth-child(1)').removeClass('menu-active');
+  desktopNav.children('li:nth-child(2)').addClass('menu-active');
+  desktopNav.children('li:nth-child(3)').removeClass('menu-active');
+  }
+  if ($(window).scrollTop() + 50 >= contact.top) {
+  desktopNav.children('li:nth-child(2)').removeClass('menu-active');
+  desktopNav.children('li:nth-child(3)').addClass('menu-active');
+  }
+})
+
 $(".menu-desktop-list li a").click(function() {
     var liText = $(this).attr('href');
     console.log(liText);
