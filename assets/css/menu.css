@@ -65,10 +65,10 @@
 }
 
 .menu-res {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   margin: 0;
   padding: 0;
   height: 100vh;
