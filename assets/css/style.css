@@ -138,6 +138,10 @@ h1,h2 {
   justify-content: space-between;
 }
 
+.gallery-big {
+  flex-direction: column;
+}
+
 .gallery-big img {
   display: block;
   width: 100%;
