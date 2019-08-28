@@ -139,7 +139,8 @@ h1,h2 {
 }
 
 .gallery-big img {
-  /* width: 100%; */
+  display: block;
+  width: 100%;
   padding: 2px;
 }
 
