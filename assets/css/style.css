@@ -43,10 +43,10 @@ h1,h2 {
 /* HEADER */
 
 .front_hero {
-  background-image: url('../images/bkg-1-res.jpg');
+  /* background-image: url('../images/bkg-1-res.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center center; */
   height: 100vh;
   position: relative;
 }
@@ -101,7 +101,7 @@ h1,h2 {
   height: 100vh;
 }
 
-.parallax-uno {
+/* .parallax-uno {
   background-image: url('../images/bkg-2-res.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -120,7 +120,7 @@ h1,h2 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}
+} */
 
 /* GALLERY SECTION */
 

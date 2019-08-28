@@ -4,7 +4,7 @@
  * @license MIT (https://github.com/pixelcog/parallax.js/blob/master/LICENSE)
  */
 
-if (md.matches) {
+// if (md.matches) {
 
 ;(function ( $, window, document, undefined ) {
 
@@ -414,4 +414,4 @@ if (md.matches) {
 
 }(jQuery, window, document));
 
-  }
+  // }
