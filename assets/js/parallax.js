@@ -4,6 +4,8 @@
  * @license MIT (https://github.com/pixelcog/parallax.js/blob/master/LICENSE)
  */
 
+if (md.matches) {
+
 ;(function ( $, window, document, undefined ) {
 
   // Polyfill for requestAnimationFrame
@@ -411,3 +413,5 @@
   });
 
 }(jQuery, window, document));
+
+  }

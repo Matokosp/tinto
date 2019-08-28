@@ -43,10 +43,12 @@ h1,h2 {
 /* HEADER */
 
 .front_hero {
+  background-image: url('../images/bkg-1-res.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   height: 100vh;
-  background: transparent;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .logo_header {
@@ -99,6 +101,27 @@ h1,h2 {
   height: 100vh;
 }
 
+.parallax-uno {
+  background-image: url('../images/bkg-2-res.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.parallax-dos {
+  background-image: url('../images/bkg-3-res.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.parallax-tres {
+  background-image: url('../images/bkg-4-res.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 /* GALLERY SECTION */
 
 .non-parallax-title {
@@ -116,7 +139,7 @@ h1,h2 {
 }
 
 .gallery-big img {
-  margin: 2px;
+  padding: 2px;
 }
 
 .gallery-medium {
@@ -126,13 +149,13 @@ h1,h2 {
 .gallery-medium img {
   display: block;
   width: 100%;
-  margin: 2px;
+  padding: 2px;
 }
 
 .gallery-small img {
   display: none;
   width: 33.3%;
-  margin: 2px;
+  padding: 2px;
 }
 
 /* CONTACT */

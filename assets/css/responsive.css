@@ -38,7 +38,27 @@
 
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) and (orientation: landscape) {
+
+  /* HEADER */
+
+  .front_hero {
+    background-image: none;
+  }
+
+  /* PARALLAX SECTION */
+
+  .parallax-uno {
+    background-image: none;
+  }
+
+  .parallax-dos {
+    background-image: none;
+  }
+
+  .parallax-tres {
+    background-image: none;
+  }
 
   /* GALLERY SECTION */
 
