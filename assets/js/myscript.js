@@ -1,3 +1,20 @@
+
+  // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+  let vh = window.innerHeight * 0.01;
+  let hola = window.innerHeight;
+  // Then we set the value in the --vh custom property to the root of the document
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+  document.documentElement.style.setProperty('--hola', `${hola}px`);
+
+  // We listen to the resize event
+  window.addEventListener('resize', () => {
+  // We execute the same script as before
+    let vh = window.innerHeight * 0.01;
+    let hola = window.innerHeight;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);    
+    document.documentElement.style.setProperty('--hola', `${hola}px`);
+  });
+
 $(window).scroll(function(){
     $(".logo_header").css("opacity", 1 - $(window).scrollTop() / 250);
   //250 is fade pixels
